@@ -1,6 +1,6 @@
 <?php
 
-header('Content-Type: text/event-stream');
+header('Content-Type: text/event-stream'); //required
 
 $s = date('s');
 
