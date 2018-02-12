@@ -1,0 +1,16 @@
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+<script>
+    var source = new EventSource("server.php");
+    source.onmessage = function(response) {
+    	$('#result').html($('#result').html()+response.data + "<hr>");
+    };
+</script>
+
+<div class="container">
+	
+	<h3>Response from Server:</h3>
+	<div id="result"></div>
+
+</div>
